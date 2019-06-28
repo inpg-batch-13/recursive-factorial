@@ -1,6 +1,10 @@
 function recursiveFactorial(n) {
-  // your code here
-}
+    if(n == 0) {
+        return 1
+    } else {
+        return n * recursiveFactorial(n - 1);
+    }
+  }
 
 // test case
 console.log(recursiveFactorial(5)) // 120
